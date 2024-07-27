@@ -12,7 +12,6 @@ Welcome to my Spring Boot Learning Repository! This repository is dedicated to d
     - [Spring Boot Documentation](#spring-boot-documentation)
 - [Project Setup](#project-setup)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
