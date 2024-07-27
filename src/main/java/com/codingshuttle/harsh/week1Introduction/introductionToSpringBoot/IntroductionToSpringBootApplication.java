@@ -10,12 +10,17 @@ public class IntroductionToSpringBootApplication implements CommandLineRunner {
 
 	@Autowired
 	Apple apple;
+
+	@Autowired
+	Apple apple2;
 	public static void main(String[] args) {
 		SpringApplication.run(IntroductionToSpringBootApplication .class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
+		apple.eatApple();
+		apple2.counter = 5;
 		apple.eatApple();
 	}
 }
