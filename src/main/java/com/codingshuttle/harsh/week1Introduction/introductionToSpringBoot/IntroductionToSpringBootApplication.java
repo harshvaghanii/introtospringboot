@@ -8,19 +8,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IntroductionToSpringBootApplication implements CommandLineRunner {
 
-	@Autowired
-	Apple apple;
+	CakeBaker obj;
+	public IntroductionToSpringBootApplication(CakeBaker obj) {
+		this.obj = obj;
+	}
 
-	@Autowired
-	Apple apple2;
 	public static void main(String[] args) {
 		SpringApplication.run(IntroductionToSpringBootApplication .class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		apple.eatApple();
-		apple2.counter = 5;
-		apple.eatApple();
+		obj.bakeCake();
 	}
 }
